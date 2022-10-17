@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 html,
 body {
   padding: 0;
@@ -23,4 +29,19 @@ a {
     color: white;
     background: black;
   }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(216, 216, 216, 0);
+  border-radius: 40px;
+  transition: all 2s linear 1s;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(216, 216, 216, 1);
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
