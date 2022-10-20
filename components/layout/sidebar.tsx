@@ -12,7 +12,7 @@ function Sidebar(props: any) {
 
   return (
     <div
-      className={`sidebar dark:bg-secondary-dark-bg bg-white  h-screen fixed overflow-auto  pb-12 shadow-xl transition-all duration-300 ease-in-out  ${
+      className={`sidebar dark:bg-secondary-dark-bg bg-white h-screen fixed overflow-auto  pb-12 shadow-xl transition-all duration-300 ease-in-out  ${
         isSidebar ? 'w-72 px-6' : 'w-0'
       }`}
     >
@@ -61,7 +61,7 @@ function Sidebar(props: any) {
                   <Disclosure.Panel className='text-gray-500'>
                     {menu.children?.map((child: any) => (
                       <Link key={child.name} href={child.path}>
-                        <a className='py-3 pl-3 flex justify-start items-center gap-x-5 capitalize rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray hover:bg-gray-100'>
+                        <a className='py-3 pl-3 flex justify-start items-center gap-x-5 capitalize rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray'>
                           {child.icon}
                           {child.name}
                         </a>

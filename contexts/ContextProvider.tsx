@@ -11,6 +11,7 @@ const initialNavItems = {
 
 export const ContextProvider = ({ children }: any) => {
   const [isSidebar, setIsSidebar] = useState(true)
+  const [isSettingbar, setIsSettingbar] = useState(false)
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
@@ -18,6 +19,8 @@ export const ContextProvider = ({ children }: any) => {
       value={{
         isSidebar,
         setIsSidebar,
+        isSettingbar,
+        setIsSettingbar,
       }}
     >
       {children}
