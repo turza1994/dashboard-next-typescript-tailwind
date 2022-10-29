@@ -50,7 +50,7 @@ export const sidebarMenus: any = [
       {
         name: 'ecommerce',
         icon: <FiShoppingBag />,
-        path: '/',
+        path: '/empty',
       },
     ],
   },
@@ -61,17 +61,17 @@ export const sidebarMenus: any = [
       {
         name: 'orders',
         icon: <AiOutlineShoppingCart />,
-        path: '/',
+        path: '/empty',
       },
       {
         name: 'employees',
         icon: <IoMdContacts />,
-        path: '/',
+        path: '/empty',
       },
       {
         name: 'customers',
         icon: <RiContactsLine />,
-        path: '/',
+        path: '/empty',
       },
     ],
   },

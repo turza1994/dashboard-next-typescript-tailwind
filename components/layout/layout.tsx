@@ -6,11 +6,16 @@ import { FiSettings } from 'react-icons/fi'
 import Settingbar from './settingbar'
 
 function Layout({ children }: any) {
-  const { isSidebar, setIsSidebar, isSettingbar, setIsSettingbar } =
-    useStateContext()
+  const {
+    isSidebar,
+    setIsSidebar,
+    isSettingbar,
+    setIsSettingbar,
+    currentMode,
+  } = useStateContext()
 
   return (
-    <div className='relative bg-main-bg dark:bg-main-dark-bg dark:text-white text-gray-600'>
+    <div className={`relative ${currentMode}`}>
       <Sidebar />
       <div
         className={`h-screen w-full flex flex-col transition-width duration-300 ease-linear ${

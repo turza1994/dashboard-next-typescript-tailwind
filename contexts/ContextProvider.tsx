@@ -12,15 +12,32 @@ const initialNavItems = {
 export const ContextProvider = ({ children }: any) => {
   const [isSidebar, setIsSidebar] = useState(true)
   const [isSettingbar, setIsSettingbar] = useState(false)
+  const [currentColor, setCurrentColor] = useState('#03C9D7')
+  const [currentMode, setCurrentMode] = useState('light')
+
+  const setMode = (e: any) => {
+    setCurrentMode(e.target.value)
+    localStorage.setItem('themeMode', e.target.value)
+  }
+
+  const setColor = (color: any) => {
+    setCurrentColor(color)
+    localStorage.setItem('colorMode', color)
+  }
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <StateContext.Provider
       value={{
         isSidebar,
         setIsSidebar,
         isSettingbar,
         setIsSettingbar,
+        currentColor,
+        setCurrentColor,
+        currentMode,
+        setCurrentMode,
+        setMode,
+        setColor,
       }}
     >
       {children}

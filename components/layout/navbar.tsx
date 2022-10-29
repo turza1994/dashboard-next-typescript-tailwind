@@ -12,7 +12,7 @@ function Navbar(props: any) {
   const { isSidebar, setIsSidebar } = useStateContext()
 
   return (
-    <div className='flex items-center justify-between w-full sticky top-0 py-1 px-8 shadow-sm text-xl dark:text-white text-gray-600'>
+    <div className='flex items-center justify-between w-full sticky top-0 py-1 px-8 shadow-sm text-xl dark:text-white text-gray-600 bg-white dark:bg-main-dark-bg'>
       <button
         type='button'
         className='rounded-full p-3 hover:bg-gray-100'
