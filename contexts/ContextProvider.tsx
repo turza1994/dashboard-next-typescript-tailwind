@@ -12,7 +12,7 @@ const initialNavItems = {
 export const ContextProvider = ({ children }: any) => {
   const [isSidebar, setIsSidebar] = useState(true)
   const [isSettingbar, setIsSettingbar] = useState(false)
-  const [currentColor, setCurrentColor] = useState('#03C9D7')
+  const [currentColor, setCurrentColor] = useState('#aaa')
   const [currentMode, setCurrentMode] = useState('light')
 
   const setMode = (e: any) => {

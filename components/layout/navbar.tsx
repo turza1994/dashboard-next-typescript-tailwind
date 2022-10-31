@@ -12,10 +12,10 @@ function Navbar(props: any) {
   const { isSidebar, setIsSidebar } = useStateContext()
 
   return (
-    <div className='flex items-center justify-between w-full sticky top-0 py-1 px-8 shadow-sm text-xl dark:text-white text-gray-600 bg-white dark:bg-main-dark-bg'>
+    <div className='flex items-center justify-between w-full sticky top-0 py-1 px-3 text-xl text-current-color bg-main-bg dark:bg-main-dark-bg'>
       <button
         type='button'
-        className='rounded-full p-3 hover:bg-gray-100'
+        className='rounded-full p-3 hover:bg-light-gray'
         onClick={() => {
           setIsSidebar(!isSidebar)
         }}
@@ -24,16 +24,16 @@ function Navbar(props: any) {
       </button>
 
       <div className='flex items-center'>
-        <button className='rounded-full p-3 hover:bg-gray-100'>
+        <button className='rounded-full p-3 hover:bg-light-gray'>
           <FiShoppingCart />
         </button>
-        <button className='rounded-full p-3 hover:bg-gray-100'>
+        <button className='rounded-full p-3 hover:bg-light-gray'>
           <BsChatLeft />
         </button>
-        <button className='rounded-full p-3 hover:bg-gray-100'>
+        <button className='rounded-full p-3 hover:bg-light-gray'>
           <RiNotification3Line />
         </button>
-        <button className='flex items-center gap-2 cursor-pointer rounded-lg text-base p-3 hover:bg-gray-100'>
+        <button className='flex items-center gap-2 cursor-pointer rounded-lg text-base p-3 hover:bg-light-gray text-gray-600 dark:text-gray-100 dark:hover:text-gray-600'>
           <Image
             className='rounded-full'
             width={32}
@@ -42,10 +42,9 @@ function Navbar(props: any) {
             alt='user-profile'
           />
           <p>
-            <span className='text-gray-400 '>Hi,</span>{' '}
-            <span className='text-gray-400 font-bold ml-1 '>Michael</span>
+            <span>Hi,</span> <span className=' font-bold ml-1 '>Michael</span>
           </p>
-          <BsChevronDown className='text-gray-400 pt-1.5' />
+          <BsChevronDown className='pt-1.5' />
         </button>
       </div>
     </div>

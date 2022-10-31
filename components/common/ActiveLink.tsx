@@ -12,7 +12,6 @@ function ActiveLink({ children, href }: any) {
     <a
       href={href}
       onClick={handleClick}
-      //   className={router.pathname === href ? `${classes.active}` : 'null'}
       className={` py-3 pl-3 flex justify-start items-center gap-x-5 capitalize rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray transition duration-100 ease-linear ${
         router.pathname === href ? '' : ''
       }`}

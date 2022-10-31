@@ -27,7 +27,7 @@ function Settingbar(props: any) {
           isSettingbar ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className='bg-white h-full w-[25%] ml-auto'>
+        <div className='bg-main-bg dark:bg-secondary-dark-bg dark:text-white h-full w-fit ml-auto'>
           <div className='flex justify-between items-center p-4 ml-4'>
             <p className='font-semibold text-lg'>Settings</p>
             <button
@@ -74,7 +74,7 @@ function Settingbar(props: any) {
 
           <div className='p-4 border-t-1 border-color ml-4'>
             <p className='font-semibold text-xl '>Theme Colors</p>
-            <div className='flex gap-3'>
+            <div className='flex flex-wrap gap-3'>
               {themeColors.map((item, index) => (
                 <div
                   className='relative mt-2 cursor-pointer flex gap-5 items-center'
